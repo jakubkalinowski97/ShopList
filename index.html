@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Zadanie 5</title>
+  <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <header>
+    <h1>PARAGON 30-03-15/004</h1>
+  </header>
+  <main>
+    <table id='productsTable'>
+      <thead>
+        <tr>
+		  <th></th>
+          <th class="lp">LP</th>
+          <th class="nazwa">NAZWA</th>
+          <th>ILOŚĆ</th>
+          <th>CENA</th>
+          <th>SUMA</th>
+        </tr>
+      </thead>
+      <tbody>
+		<tr id='products'>
+		</tr>  
+      </tbody>
+		<tr>
+          <td colspan="5" class="razem">RAZEM</td>
+          <td class="razem" ><span id='sumOfproducts'></span> ZL</td>
+        </tr>
+    </table>
+	<div class="edit-product-form"></div>
+  </main>
+  <form id="newProductForm">
+    <table>
+      <thead>
+        <tr><td colspan="2">
+          <h2>Nowa pozycja</h2>
+        </td></tr>
+      </thead>
+      <tr>
+        <td>Nazwa:</td>
+        <td><input id='name'></td>
+      </tr>
+      <tr>
+        <td>Ilość:</td>
+        <td><input id='quantity'></td>
+      </tr>
+      <tr>
+        <td>Cena:</td>
+        <td><input id='price'></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="right">
+          <input type="submit" value="Dodaj">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
